@@ -12,6 +12,7 @@ set(VULKAN_SDK /Applications/Development/VulkanSDK/macOS)
 
 add_executable(Spectra main.cpp
     lve_window.hpp lve_window.cpp
+    first_app.hpp first_app.cpp
 )
 
 # Include Vulkan and GLFW paths

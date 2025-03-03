@@ -12,15 +12,25 @@ namespace lve
     public:
         LveWindow(int w, int h, std::string name);
         ~LveWindow();
+
+        //deletes copy constructor
+        LveWindow(const LveWindow&) = delete;
+        //deletes assignment operator deletion
+        LveWindow& operator=(const LveWindow&) = delete;
+
+        bool shouldClose()
+        {
+            return glfwWindowShouldClose(window);
+        }
     private:
         void initWindow();
+
 
         const int width;
         const int height;
 
         std::string windowName;
         GLFWwindow* window;
-
     };
 }
 

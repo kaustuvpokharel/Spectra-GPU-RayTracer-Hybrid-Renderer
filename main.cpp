@@ -1,13 +1,20 @@
-#define GLFW_INCLUDE_VULKAN
+#include "first_app.hpp"
+#include <cstdlib>
 #include <iostream>
-
-#include <GLFW/glfw3.h>
 #include <stdexcept>
-#include <vector>
-
 
 int main()
 {
-    std::cout << "Hello World!" << std::endl;
-    return 0;
+    lve::FirstApp app;
+
+    try{
+        app.run();
+    }
+    catch(const std::exception &e)
+    {
+        std::cerr << e.what() << '\n';
+        return EXIT_FAILURE;
+    }
+
+    return EXIT_SUCCESS;
 }
