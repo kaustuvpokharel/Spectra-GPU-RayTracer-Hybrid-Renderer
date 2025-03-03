@@ -10,7 +10,9 @@ find_package(glfw3 REQUIRED)
 
 set(VULKAN_SDK /Applications/Development/VulkanSDK/macOS)
 
-add_executable(Spectra main.cpp)
+add_executable(Spectra main.cpp
+    lve_window.hpp lve_window.cpp
+)
 
 # Include Vulkan and GLFW paths
 include_directories(

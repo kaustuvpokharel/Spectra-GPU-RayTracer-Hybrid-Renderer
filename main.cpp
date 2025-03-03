@@ -1,9 +1,13 @@
+#define GLFW_INCLUDE_VULKAN
 #include <iostream>
 
-using namespace std;
+#include <GLFW/glfw3.h>
+#include <stdexcept>
+#include <vector>
+
 
 int main()
 {
-    cout << "Hello World!" << endl;
+    std::cout << "Hello World!" << std::endl;
     return 0;
 }
