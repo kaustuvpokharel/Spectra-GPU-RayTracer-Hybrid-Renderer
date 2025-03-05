@@ -2,6 +2,7 @@
 #define FIRSTAPP_HPP
 
 #include "lve_window.hpp"
+#include "lve_pipeline.hpp"
 
 namespace lve
 {
@@ -14,6 +15,7 @@ namespace lve
         void run();
     private:
         LveWindow lveWindow{WIDTH, HEIGHT, "Hello Vulkan"};
+        LvePipeline lvePipeline{"shaders/simple_shader.vert.spv", "shaders/simple_shader.frag.spv"};
     };
 }
 
