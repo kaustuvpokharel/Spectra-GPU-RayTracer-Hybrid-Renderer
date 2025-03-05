@@ -41,6 +41,7 @@ add_executable(Spectra main.cpp
     shaders/simple_shader.frag
     compile.sh
     lve_pipeline.hpp lve_pipeline.cpp
+    engine.hpp engine.cpp
 )
 
 # Include Vulkan and GLFW paths
